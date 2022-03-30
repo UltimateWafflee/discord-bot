@@ -11,7 +11,7 @@ export const metar: CommandDefinition = {
         const splitUp = msg.content.replace(/\.metar\s+/, ' ').split(' ');
 
         if (splitUp.length <= 1) {
-            await msg.reply('please provide an ICAO airport code.');
+            await msg.reply('Please provide an ICAO airport code.');
             return Promise.resolve();
         }
         const icaoArg = splitUp[1];
